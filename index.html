@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html Denemeleri</title>
+    <script src="script.js"></script>
   </head>
   <body>
     <ol>
@@ -31,6 +32,24 @@
       </li>
     </ol>
 
-    <script src="script.js"></script>
+    <div class="container">
+      <div class="card"><img src="Resimler/1.png" alt="" /></div>
+      <div class="card"><img src="Resimler/2.png" alt="" /></div>
+      <div class="card"><img src="Resimler/3.png" alt="" /></div>
+      <div class="card"><img src="Resimler/4.png" alt="" /></div>
+      <div class="card"><img src="Resimler/5.png" alt="" /></div>
+    </div>
+    <style>
+      .card {
+        transition: 0.5s ease;
+        cursor: pointer;
+      }
+      .container:hover > :not(:hover) {
+        opacity: 0, 3;
+      }
+      .card:hover {
+        transform: scale(1.1);
+      }
+    </style>
   </body>
 </html>
