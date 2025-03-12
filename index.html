@@ -7,7 +7,6 @@
   </head>
   <body>
     <script>
-      alert("Merhaba");
 
       //Değişken oluşturma
       var a; //önce değişken oluştur
@@ -15,19 +14,45 @@
 
       var b = 2; //değişken oluştur ve değer ata
 
-      var c = 3, d; //değişken oluştur, değer ata ve başka bir değişken oluştur
+      var c = 3,
+        d; //değişken oluştur, değer ata ve başka bir değişken oluştur
       d = 4;
 
       //eski tarayıcılarda çalışması için var kullan. const ve let 2015te geldi yeni tarayıcılar için
 
       //Sabit değişken
-      const PI=3.14;
+      const PI = 3.14;
 
       //sadece tanımlandığı blok/fonksiyon için kullnacaksak
-      let x=1, y;
-      y=2;
+      let x = 1,
+        y;
+      y = 2;
+      z = 3;
+
+      //Değişken sözel bir ifade ise çif tırnak("") içerisinde yazılmalı
+      var ad = "fahrettim";
+
+      //var, const ya da let kullanmadan da değişken atayabiliriz
+      x = 1;
+      y = 2;
+      toplam = x + y;
+      //alert(toplam);
+
+      //EKRANA VERİ YAZDIRMA
+
+      alert("birinci yöntem");
+      var ad = "Ömer";
+      alert(ad);
+
+      document.write("test");       //sayfaya yazdırma
+      document.write(ad);
+
+      console.log("metin yaz");       //konsolo yazdırma
+      console.log(ad);
 
       
+
+
 
     </script>
     <script src="script.js"></script>
